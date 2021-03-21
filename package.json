@@ -38,7 +38,9 @@
     "preinstall": "node ./tools/yarn/check-yarn.js",
     "//webdriver-update-README": "ChromeDriver version must match Puppeteer Chromium version, see https://github.com/GoogleChrome/puppeteer/releases http://chromedriver.chromium.org/downloads",
     "webdriver-update": "webdriver-manager update --standalone false --gecko false --versions.chrome 79.0.3945.16",
-    "ngcc": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
+    "ngcc": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -79,11 +81,12 @@
     "quicktype-core": "^6.0.15",
     "temp": "^0.9.0",
     "tslint": "^5.15.0",
-    "typescript": "3.6.4"
+    "typescript": "3.6.4",
+    "snyk": "^1.503.0"
   },
   "devDependencies": {
     "@angular/compiler": "9.0.0-rc.6",
-    "@angular/compiler-cli": "9.0.0-rc.6",
+    "@angular/compiler-cli": "9.0.0",
     "@bazel/bazel": "1.2.0",
     "@bazel/buildifier": "0.29.0",
     "@bazel/jasmine": "0.42.3",
@@ -113,7 +116,7 @@
     "@types/webpack-dev-server": "^3.1.7",
     "@types/webpack-sources": "^0.1.5",
     "@yarnpkg/lockfile": "1.1.0",
-    "ajv": "6.10.2",
+    "ajv": "6.12.3",
     "ansi-colors": "3.2.4",
     "common-tags": "^1.8.0",
     "conventional-changelog": "^1.1.0",
@@ -123,15 +126,15 @@
     "husky": "^1.3.1",
     "jasmine": "^3.3.1",
     "jasmine-spec-reporter": "^4.2.1",
-    "karma": "~4.4.0",
+    "karma": "~6.0.0",
     "karma-jasmine": "^2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "license-checker": "^20.1.0",
     "minimatch": "^3.0.4",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "npm-registry-client": "8.6.0",
     "ora": "^4.0.2",
-    "pacote": "10.2.1",
+    "pacote": "11.1.0",
     "pidtree": "^0.3.0",
     "pidusage": "^2.0.17",
     "rxjs": "6.5.3",
@@ -142,16 +145,17 @@
     "spdx-satisfies": "^4.0.0",
     "tar": "^4.4.4",
     "through2": "^2.0.3",
-    "tree-kill": "^1.2.0",
+    "tree-kill": "^1.2.2",
     "ts-api-guardian": "0.4.6",
     "ts-node": "^5.0.0",
     "tslint-no-circular-imports": "^0.7.0",
     "tslint-sonarts": "1.9.0",
-    "verdaccio": "4.4.0"
+    "verdaccio": "4.11.2"
   },
   "husky": {
     "hooks": {
       "pre-push": "node ./bin/devkit-admin hooks/pre-push"
     }
-  }
+  },
+  "snyk": true
 }
