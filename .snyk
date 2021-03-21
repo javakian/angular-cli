@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - conventional-commits-parser > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - karma > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - '@types/babel__core > @babel/types > lodash':
+        patched: '2021-03-21T20:48:56.398Z'
+    - conventional-changelog > conventional-changelog-core > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - '@types/babel__core > @types/babel__traverse > @babel/types > lodash':
+        patched: '2021-03-21T20:48:56.398Z'
+    - conventional-changelog > conventional-changelog-core > conventional-changelog-writer > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - conventional-changelog > conventional-changelog-core > conventional-commits-parser > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - karma > log4js > streamroller > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - karma > log4js > streamroller > async > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
+    - verdaccio > @verdaccio/readme > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2021-03-21T20:48:56.398Z'
