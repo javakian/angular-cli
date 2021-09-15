@@ -83,7 +83,7 @@
   },
   "devDependencies": {
     "@angular/compiler": "9.0.0-rc.6",
-    "@angular/compiler-cli": "9.0.0-rc.6",
+    "@angular/compiler-cli": "9.1.0",
     "@bazel/bazel": "1.2.0",
     "@bazel/buildifier": "0.29.0",
     "@bazel/jasmine": "0.42.3",
@@ -147,7 +147,7 @@
     "ts-node": "^5.0.0",
     "tslint-no-circular-imports": "^0.7.0",
     "tslint-sonarts": "1.9.0",
-    "verdaccio": "4.4.0"
+    "verdaccio": "4.6.0"
   },
   "husky": {
     "hooks": {
