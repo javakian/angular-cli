@@ -71,7 +71,7 @@
     "@types/progress": "^2.0.3",
     "@types/universal-analytics": "^0.4.2",
     "@types/uuid": "^3.4.4",
-    "debug": "^4.1.1",
+    "debug": "^4.3.1",
     "glob": "^7.0.3",
     "node-fetch": "^2.2.0",
     "prettier": "^1.16.4",
@@ -83,7 +83,7 @@
   },
   "devDependencies": {
     "@angular/compiler": "9.0.0-rc.6",
-    "@angular/compiler-cli": "9.0.0-rc.6",
+    "@angular/compiler-cli": "9.0.0",
     "@bazel/bazel": "1.2.0",
     "@bazel/buildifier": "0.29.0",
     "@bazel/jasmine": "0.42.3",
