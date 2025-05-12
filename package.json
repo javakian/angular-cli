@@ -76,7 +76,7 @@
     "node-fetch": "^2.2.0",
     "prettier": "^1.16.4",
     "puppeteer": "2.0.0",
-    "quicktype-core": "^6.0.15",
+    "quicktype-core": "^20.0.5",
     "temp": "^0.9.0",
     "tslint": "^5.15.0",
     "typescript": "3.6.4"
